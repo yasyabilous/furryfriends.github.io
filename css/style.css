@@ -1,0 +1,1838 @@
+@charset "utf-8";
+@font-face {
+    font-family: "ShantyHouse";
+    src: url("/fonts/ShantyHouseRegular.ttf") format('truetype'); /* TTF file for CSS3 browsers */
+}
+* {
+  box-sizing: border-box;
+}
+#header {
+	font-family: "Montserrat";
+}
+body {
+	background-color: #DCE5F5;
+}
+
+.navigation-b {
+	padding-bottom: 15px;
+}
+.nav-txt {
+    font-family: "Montserrat";
+    font-weight: 500;
+}
+.contactus-txt {
+	font-family: "Shanty House";
+	  -webkit-text-stroke: 2px #231F20;
+	color: #EEBC34;
+	font-size: 96px;
+	text-shadow: 3px 3px #231F20;
+	padding-top: 80px;
+	text-align: center;
+}
+.googlemap iframe{
+	width: 80%;
+	border: 3px solid #231F20;
+    border-radius: 50px;
+	/*width: 515px;
+    height: 578px;*/
+	margin: 50px 10%;
+	box-shadow: 15px 13px #231F20;
+	height: 500;
+	
+	
+}
+/*------------------BUTTONS----------------------*/
+.btn-style-1 {
+    background-color: #EEBC34;
+    border: 3px solid #231F20;
+    border-radius: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: "Montserrat";
+    color: #231F20;
+    -webkit-box-shadow: 3px 3px;
+    box-shadow: 3px 3px;
+    font-weight: bold;
+	padding-top: 6px;
+	padding-bottom: 6px
+}
+
+.btn-style-1:active {
+  box-shadow: 2px 2px;
+  transform: translateY(4px);
+}
+.btn-style-1:hover {
+	background-color: #F2F2F2;
+	border: 3px solid #231F20;
+    border-radius: 80px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: "Montserrat";
+    color: #231F20;
+    -webkit-box-shadow: 3px 3px;
+    box-shadow: 3px 3px;
+    font-weight: bold;
+}
+
+
+.btn-style-2 {
+	background-color: #F2F2F2;
+    border: 3px solid #231F20;
+    border-radius: 80px;
+    padding-left: 30px;
+	padding-top: 6px;
+	padding-bottom: 6px;
+    padding-right: 30px;
+    font-family: "Montserrat";
+    color: #231F20;
+    -webkit-box-shadow: 3px 3px;
+    box-shadow: 3px 3px;
+    font-weight: bold;
+}
+.btn-style-2:active {
+  box-shadow: 2px 2px;
+  transform: translateY(4px);
+}
+.btn-style-2:hover {
+	background-color: #EEBC34;
+}
+.btn-homepage {
+	padding-left: 73px;
+}
+.btn-homepage button {
+	margin-left: 20px;
+}
+.nb-furryfriends {
+	/*padding-top: 10px;*/
+	font-family: "Shanty House";
+	font-size: 28px;
+}
+
+.anim {
+	transition: transform 250ms;
+}
+.anim:hover {
+	transform: translateY(-10px);
+}
+/*------------------HOMPAGE-CONTAINER-1----------------------*/
+.flex-container-1 {
+  	display: flex;
+	flex-direction: row;
+  	background-color: #DCE5F5;
+	margin: 0%;
+	/*align-items: center;
+  	justify-content: center;*/
+}
+.flex-container-1 h1 {
+	font-family: "Shanty House";
+	  -webkit-text-stroke: 2px #231F20;
+	color: #EEBC34;
+	font-size: 96px;
+	text-shadow: 3px 3px #231F20;
+	padding-top: 80px;
+	padding-left: 90px;
+}
+.flex-container-1 p {
+	padding-left: 90px;
+	font-size: 20px;
+	padding-right: 120px;
+}
+.fc-col1 {
+	width: 50%;
+}
+/*------------------IMAGE-STYLING----------------------*/
+.homepage-img-1 {
+	width: 98%;
+	padding-left: 20px;
+	max-width: 1000px;
+	min-width: 500px;
+  height: auto;
+}
+.homepage-img-2 {
+	width: 105%;
+	padding-left: 20px;
+	max-width: 1000px;
+	min-width: 500px;
+  height: auto;
+}
+.homepage-img-3 {
+	width: 101%;
+	padding-left: 90px;
+	max-width: 1000px;
+	min-width: 500px;
+  height: auto;
+}
+/*------------------MARQUEE----------------------*/
+.marquee-container{
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+	background-color: #F2F2F2;
+}
+
+.marquee{
+	background-color: #EEBC34;
+	border-top: 3px solid #231F20;
+	border-bottom: 3px solid #231F20;
+	font-family: "Shanty House";
+	font-size: 58px;
+	 -webkit-text-stroke: 2px #231F20;
+	color: #EEBC34;
+    line-height: 1;
+    padding: 14px 0;
+    white-space: nowrap;
+    animation: marquee 16s infinite linear; /* notice the infinite */
+}
+.marquee:after{
+    content: "Dogs & Cats Dogs & Cats Dogs & Cats Dogs & Cats Dogs & Cats";
+}
+@keyframes marquee{
+    0% {
+        transform: translateX(0)
+    }
+    100% {
+        transform: translateX(-50%)
+    }
+}
+/*------------------HOMPAGE-SERVICES-CONTAINER-2----------------------*/
+.homepage-services {
+	background-color: #F2F2F2;
+	text-align: center;
+	height: auto;
+	border-bottom: 3px solid black;
+}
+.homepage-services h3 {
+	padding-top: 100px;
+	font-family: "Shanty House";
+	font-size: 64px;
+}
+.homepage-services h5 {
+	font-family: "Montserrat";
+	font-size: 18px;
+	padding-top: 20px;
+}
+.flex-container-2 {
+	display: flex;
+	flex-direction: row;
+	margin-top: 5%;
+	margin-left: 10%;
+	margin-right: 10%;
+	margin-bottom: 10%;
+	justify-content: space-evenly;
+}
+.flex-container-2 p{
+	font-family: "Montserrat";
+	font-size: 16px;
+	text-align: center;
+}
+.fc-col2 {
+	width: 30%;
+}
+.fc-col2 img {
+	width: 60%;
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+	
+}
+.homepage-el1 {
+	background-color: #F493B5;
+	border: 3px solid black;
+    border-radius: 50%;
+	width: 200px;
+    height: 200px;
+	position: relative;
+	margin: 0 auto;
+}
+.homepage-el2 {
+	background-color: #7DA3D4;
+	border: 3px solid black;
+    border-radius: 50%;
+	width: 200px;
+    height: 200px;
+	position: relative;
+	margin: 0 auto;
+}
+.homepage-el3 {
+	background-color: #EEBC34;
+	border: 3px solid #231F20;
+    border-radius: 50%;
+	width: 200px;
+    height: 200px;
+	position: relative;
+	margin: 0 auto;
+}
+/*------------------HOMPAGE-ABOUT-US-CONTAINER-3----------------------*/
+.homepage-aboutus {
+	background-color: #F2F2F2;
+	height: 660px;
+}
+.flex-container-3 {
+  	display: flex;
+	flex-direction: row;
+	padding: 5%;
+	background-color: #F2F2F2;
+	/*align-items: center;
+  	justify-content: center;*/
+}
+
+.flex-container-3 img {
+	width: 72%;
+	border: 3px solid #231F20;
+    border-radius: 10%;
+	box-shadow: 15px 13px #231F20;
+	min-width: 400px;
+}
+.flex-container-3 h3 {
+	font-family: "Shanty House";
+	font-size: 64px;
+}
+.flex-container-3 p {
+    font-family: "Montserrat";
+    color: #231F20;
+    font-weight: 400;
+	width: 500px;
+	font-size: 16px;
+}
+.fc-col3 {
+	width: 50%;
+}
+/*------------------HOMPAGE-PET-HOTEL-CONTAINER-4----------------------*/
+
+.homepage-pethotel {
+	background-color: #DCE5F5;
+	height: 550px;
+	padding-bottom: 20px;
+}
+.flex-container-4 {
+  	display: flex;
+	flex-direction: row;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	padding-left: 16%;
+	background-color: #DCE5F5;
+	/*align-items: center;
+  	justify-content: center;*/
+}
+
+.flex-container-4 img {
+	width: 79%;
+	border: 3px solid #231F20;
+    border-radius: 10%;
+	box-shadow: 15px 13px #231F20;
+	
+}
+.flex-container-4 h3 {
+	font-family: "Shanty House";
+	font-size: 64px;
+}
+.flex-container-4 p {
+    font-family: "Montserrat";
+    color: #231F20;
+    font-weight: 400;
+	width: 470px;
+	font-size: 16px;
+}
+.fc-col4 {
+	width: 50%;
+}
+/*------------------HOMPAGE-CUSTOMERS-CONTAINER-5----------------------*/
+.homepage-customers {
+	background-color: #F2F2F2;
+	background-image: url("../images/homepage-carousel3.jpg");
+	background-size: cover;
+	text-align: center;
+	height: 850px;
+	border-bottom: 3px solid black;
+}
+.homepage-customers h3 {
+	font-family: "Shanty House";
+	font-size: 77px;
+	padding-top: 100px;
+	margin-top: 150px;
+	  -webkit-text-stroke: 2px #231F20;
+	color: #EEBC34;
+	text-shadow: 3px 3px #231F20;
+}
+.flex-container-5 {
+	display: flex;
+	flex-direction: row;
+	margin-top: 5%;
+	margin-left: 3%;
+	margin-right: 3%;
+	margin-bottom: 10%;
+	padding-top: 0.5%;
+	justify-content: space-evenly;
+	opacity: 0.9;
+}
+.flex-container-5 img {
+	border: 3px solid black;
+    border-radius: 50%;
+	width: 35%;
+	margin-top: 35px;
+}
+.flex-container-5 h5 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
+	padding-top: 25px;
+	font-size: 25px;
+}
+.flex-container-5 h6 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    margin-top: 8px;
+    color: #414141;
+	font-size: 14px;
+}
+.flex-container-5 p {
+	width: 360px;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 25px;
+	font-size: 16px;
+}
+
+.fc-col5 {
+	width: 30%;
+}
+.homepage-el4 {
+	background-color: #F493B5;
+	border: 3px solid black;
+    border-radius: 9%;
+	width: 415px;
+    height: 478px;
+	position: relative;
+	margin: 0 auto;
+	box-shadow: 15px 13px #231F20;
+}
+.homepage-el5 {
+	background-color: #7DA3D4;
+	border: 3px solid black;
+    border-radius: 9%;
+	width: 415px;
+    height: 478px;
+	position: relative;
+	margin: 0 auto;
+	box-shadow: 15px 13px #231F20;
+}
+.homepage-el6 {
+	background-color: #EEBC34;
+	border: 3px solid #231F20;
+    border-radius: 9%;
+	width: 415px;
+    height: 478px;
+	position: relative;
+	margin: 0 auto;
+	box-shadow: 15px 13px #231F20;
+}
+/*------------------FOOTER-CONTAINER-6----------------------*/
+.footer {
+	background-color: #231F20;
+	height: 450px;
+	padding-bottom: 20px;
+	margin: 0px;
+}
+.footer a {
+	color: #F2F2F2;
+	font-family: "Montserrat", sans-serif;
+}
+.flex-container-6 {
+  	display: flex;
+	flex-direction: row;
+	padding-bottom: 1%;
+	padding-left: 0%;
+	background-color: #231F20;
+	padding-top: 5%;
+	margin-left: 40px;
+	/*align-items: center;
+  	justify-content: center;*/
+}
+.fc-col6 {
+	width: 20%;
+	/*background-color: aquamarine;*/
+	margin: 1%;
+	position: relative;
+	color: #F2F2F2;
+}
+.fc-col6 img {
+	width: 170%;
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+	padding-left: 20px;
+}
+.fc-col6 h5, .fc-col6 p {
+	padding-left: 80px;
+}
+.fc-col6 h5 {
+	font-family: "Montserrat", sans-serif;
+	font-weight: bold;
+	padding-top: 25px;
+	font-size: 25px;
+	color: #EEBC34;
+}
+.fc-col6 p {
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+}
+.fc-col6 button {
+	margin-top: 25px;
+}
+#social-media {
+	width: 80%;
+	padding-left: 0px;
+	left: 38%;
+	min-width: 200px;
+}
+.fc-col7 h5 {
+	color: #F2F2F2;
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	margin-top: 3%;
+	text-align: center;
+	background-color: #231F20;
+}
+/*------------------SERVICES-CONTAINERS----------------------*/
+
+
+
+.services-container {
+	background-color: #F2F2F2;
+	height: 550px;
+	padding-bottom: 20px;
+}
+.flex-container-8 {
+  	display: flex;
+	flex-direction: row;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	padding-left: 16%;
+	background-color: #F2F2F2;
+	border-top: 3px solid #231F20;
+	/*align-items: center;
+  	justify-content: center;*/
+}
+.flex-container-8 img {
+	width: 79%;
+	border: 3px solid #231F20;
+    border-radius: 10%;
+	box-shadow: 15px 13px #231F20;
+	
+}
+.flex-container-8 h3 {
+	font-family: "Shanty House";
+	font-size: 64px;
+}
+.flex-container-8 p {
+    font-family: "Montserrat";
+    color: #231F20;
+    font-weight: 400;
+	width: 470px;
+	font-size: 16px;
+}
+.fc-col8 {
+	width: 50%;
+}
+
+.services-style h5 {
+	color: #d4a833;
+	font-weight: 700;
+}
+.services-style ul {
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+}
+/*------------------SERVICES-RESERVATION----------------------*/
+.services-reservation {
+	background-color: #F2F2F2;
+	background-image: url("../images/homepage-carousel4.png");
+	background-size: cover;
+	text-align: center;
+	height: 650px;
+	border-bottom: 3px solid black;
+	display: flex;
+    justify-content: center;
+	margin-top: 80px;
+}
+.services-reservation h3 {
+	font-family: "Shanty House";
+	font-size: 77px;
+	padding-top: 130px;
+	  -webkit-text-stroke: 2px #231F20;
+	color: #EEBC34;
+	text-shadow: 3px 3px #231F20;
+	
+}
+.services-reservation h5 {
+	font-family: "Montserrat", sans-serif;
+	font-size: 18px;
+	font-weight: 700;
+	text-align: center;
+	margin-bottom: 15px;
+}
+.services-res-box {
+	background-color: rgba(242,242,242,0.9);
+	border: 3px solid black;
+    border-radius: 39px;
+	width: 80%;
+    height: 478px;
+	margin-top: 5%;
+	box-shadow: 15px 13px #231F20;
+	
+}
+#res-color-1 {
+	background-color: #7DA3D4;
+}
+#res-color-11 {
+	background-color: #7DA3D4;
+}
+#res-color-2 {
+	background-color: #F493B5;
+}
+#res-color-22 {
+	background-color: #F493B5;
+}
+#res-color-3 {
+	background-color: #EEBC34;
+}
+#res-color-33 {
+	background-color: #EEBC34;
+}
+/*------------------MEDIA-QUERIES----------------------*/
+.mobile {
+	display: none;
+}
+
+
+
+/* Extra small devices (phones, 576px and down) */
+@media (max-width: 600px) {
+  .flex-container-1 {
+	  flex-direction: column-reverse;
+	  align-items: center;
+  	justify-content: center;
+	  
+  }
+	body { 
+      font-size: 2em; 
+   }
+	.homepage-img-1 {
+	width: 90%;
+	margin: 0 auto;
+	max-width: 1000px;
+	min-width: 300px;
+    height: auto;
+	padding-right: 0%;
+	padding-left: 0%;
+		display: block;
+}
+
+	.flex-container-1 h1 {
+	font-size: 60px;
+	text-shadow: 3px 3px #231F20;
+	padding-top: 80px;
+	text-align: center;	
+	padding-right: 5%;
+	padding-left: 5%;	
+}
+	
+.flex-container-1 p {
+	font-size: 15px;
+	text-align: center;
+	padding-right: 5%;
+	padding-left: 5%;
+}
+	.fc-col1 {
+	width: 100%;
+}
+	.btn-style-1 {
+	font-size: 15px;
+}
+	.btn-style-2 {
+	font-size: 15px;
+}
+	.btn-homepage {
+	padding: 0px;
+	margin-bottom: 30%;
+	text-align: center;
+}
+	.btn-homepage button {
+	margin-left: 0px;
+}
+	.marquee {
+	font-size: 40px;
+	}
+	 /* -----------services------------- */
+.homepage-services {
+	text-align: center;
+	height: 1000px;
+	border-bottom: 3px solid black;
+}
+.homepage-services h3 {
+	padding-top: 100px;
+	font-size: 50px;
+}
+.homepage-services h5 {
+	font-size: 18px;
+	padding-top: 20px;
+}
+.flex-container-2 {
+	display: flex;
+	flex-direction: column;
+	 /* align-items: center;
+	justify-content: space-evenly;*/
+	margin-top: 5%;
+	margin-left: 0%;
+	margin-right: 0%;
+	margin-bottom: 10%;
+	justify-content: center;
+}
+.fc-col2 {
+	width: 100%;
+}
+	.fc-col9 {
+		width: 100%;
+	}
+/* -----------about us------------- */
+	.homepage-aboutus {
+	background-color: #F2F2F2;
+	height: 980px;
+}
+.flex-container-3 {
+  	display: flex;
+	flex-direction: column;
+	
+	background-color: #F2F2F2;
+	/*align-items: center;
+  	justify-content: center;*/
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-container-3 img {
+	width: 72%;
+	min-width: 400px;
+	margin: 0 auto;
+	display: block;
+}
+.flex-container-3 h3 {
+	font-size: 50px;
+	text-align: center;
+	padding-top: 40px;
+	padding-right: 5%;
+	padding-left: 5%;
+}
+.flex-container-3 p {
+    font-size: 15px;
+	text-align: center;
+	padding-right: 5%;
+	padding-left: 5%;
+	display: block;
+	margin: auto;
+}
+.fc-col3 {
+	width: 100%;
+}
+	
+	.btn-center {
+	padding: 0px;
+	margin-bottom: 10%;
+	text-align: center;
+}
+	/* -----------pet hotel------------- */
+	.homepage-pethotel {
+	background-color: #DCE5F5;
+	height: 850px;
+	padding-bottom: 20px;
+}
+.flex-container-4 {
+  	display: flex;
+	flex-direction: column-reverse;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	background-color: #DCE5F5;
+	justify-content: center;
+	align-items: center;
+	padding-left: 0%;
+	/*align-items: center;
+  	justify-content: center;*/
+}
+
+.flex-container-4 img {
+	width: 72%;
+	min-width: 400px;
+	margin: 0 auto;
+	display: block;
+	
+	
+}
+.flex-container-4 h3 {
+	font-size: 50px;
+	text-align: center;
+	padding-top: 40px;
+	padding-right: 5%;
+	padding-left: 5%;
+}
+.flex-container-4 p {
+    font-size: 15px;
+	text-align: center;
+	padding-right: 10%;
+	padding-left: 10%;
+	display: block;
+	margin: auto;
+	width: auto;
+}
+.fc-col4 {
+	width: 100%;
+}
+	/* -----------what our customers say------------- */
+	.homepage-customers {
+	background-image: url("../images/homepage-carousel3.jpg");
+	background-size: cover;
+	text-align: center;
+	height: 1900px;
+	border-bottom: 3px solid black;
+}
+.homepage-customers h3 {
+	font-size: 50px;
+	text-align: center;
+	padding-top: 90px;
+	padding-right: 5%;
+	padding-left: 5%;
+	
+	/*padding-top: 100px;
+	margin-top: 150px;
+	  -webkit-text-stroke: 2px #231F20;
+	color: #EEBC34;
+	text-shadow: 3px 3px #231F20;*/
+}
+.flex-container-5 {
+	display: flex;
+	flex-direction: column;
+	margin-top: 5%;
+	margin-left: 3%;
+	margin-right: 3%;
+	margin-bottom: 10%;
+	padding-top: 0.5%;
+	justify-content: space-evenly;
+	opacity: 0.9;
+}
+.flex-container-5 img {
+	border: 3px solid black;
+    border-radius: 50%;
+	width: 35%;
+	margin-top: 35px;
+}
+.flex-container-5 h5 {
+	font-size: 25px;
+}
+.flex-container-5 h6 {
+	font-size: 14px;
+}
+.flex-container-5 p {
+	width: 360px;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 25px;
+	font-size: 15px;
+}
+
+.fc-col5 {
+	width: 100%;
+}
+.homepage-el4 {
+	background-color: #F493B5;
+	border: 3px solid black;
+    border-radius: 9%;
+	width: 415px;
+    height: 478px;
+	position: relative;
+	margin: 0 auto;
+	box-shadow: 15px 13px #231F20;
+	margin-bottom: 60px;
+}
+.homepage-el5 {
+	background-color: #7DA3D4;
+	border: 3px solid black;
+    border-radius: 9%;
+	width: 415px;
+    height: 478px;
+	position: relative;
+	margin: 0 auto;
+	box-shadow: 15px 13px #231F20;
+	margin-bottom: 60px;
+}
+.homepage-el6 {
+	background-color: #EEBC34;
+	border: 3px solid #231F20;
+    border-radius: 9%;
+	width: 415px;
+    height: 478px;
+	position: relative;
+	margin: 0 auto;
+	box-shadow: 15px 13px #231F20;
+	margin-bottom: 60px;
+}
+	
+	
+	.footer {
+	
+	height: 1000px;
+	padding-bottom: 0px;
+	margin: 0px;
+	background-color: #231F20;
+}
+.flex-container-6 {
+  	display: flex;
+	flex-direction: column;
+	padding-bottom: 0%;
+	padding-left: 0%;
+	background-color: #231F20;
+	padding-top: 5%;
+	margin-left: 0px;
+	/*align-items: center;
+  	justify-content: center;*/
+}
+.fc-col6 {
+	width: 100%;
+	/*background-color: aquamarine;*/
+	margin: 1%;
+	color: #F2F2F2;
+}
+.fc-col6 img {
+	margin-top: 0px;
+	width: 60%;
+	position: absolute;
+  	top: 0px;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+	padding-left: 0px;
+	display: none;
+	padding-bottom: 0px;
+}
+.fc-col6 h5, .fc-col6 p {
+	padding-left: 0px;
+}
+.fc-col6 h5 {
+	font-family: "Montserrat", sans-serif;
+	text-align: center;
+	font-weight: bold;
+	padding-top: 10px;
+	font-size: 25px;
+	color: #EEBC34;
+}
+.fc-col6 p {
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+	text-align: center;
+}
+.fc-col6 button {
+	margin-top: 25px;
+}
+#social-media {
+	width: 30%;
+	padding-left: 0px;
+	left: 0%;
+	display: block;
+	position: static;
+	margin-left: 50%;
+	min-width: 200px;
+}
+	.fc-col7 h5 {
+	color: #F2F2F2;
+	font-family: "Montserrat", sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	
+	text-align: center;
+	background-color: #231F20;
+}
+}
+
+
+
+
+/*-------------------------BOOKING-SERVICES-------------------------------*/
+#booking-bg {
+	background-color: #231F20;
+	
+}
+.booking-box {
+	border: 3px solid #231F20;
+	box-shadow: 15px 13px #231F20;
+    border-radius: 39px;
+	background-color: #F2F2F2;
+	height: auto;
+	width: 50%;
+	margin-top: 10%;
+	margin-left: 25%;
+	margin-bottom: 10%;
+	padding: 2% 2% 5% 2%;
+	
+}
+.booking-box h5 {
+	font-family: "Montserrat";
+	font-size: 16px;
+	padding-top: 25px;
+	font-weight: 600;
+	text-align: center;
+	color: #a3a3a3;
+	
+}
+label {
+	font-family: "Montserrat";
+	font-size: 18px;
+	padding-top: 20px;
+	font-weight: 600;
+}
+input {
+    background-color: #FFFFFF;
+    border: 3px solid #d1a52c;
+	display: block;
+	width: 98%;
+	border-radius: 12px;
+    padding-top: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    font-size: 18px;
+    height: 1.5rem;
+}
+select {
+   background-color: #FFFFFF;
+    border: 3px solid #d1a52c;
+	display: block;
+	width: 98%;
+	border-radius: 12px;
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    font-size: 18px;
+	color: #231F20;
+}
+form p {
+	font-family: "Montserrat";
+	font-size: 18px;
+	padding-top: 20px;
+	font-weight: 600;
+}
+::placeholder {
+  color: #d1a52c;
+}
+.required:after {
+    content: " *";
+    color: #EE4E86;
+  }
+.booking-logo {
+	font-family: "Shanty House";
+	font-size: 28px;
+	text-align: center;
+}
+.btn-booking {
+	display: flex;
+	padding-left: 25%;
+	gap: 32px;
+	margin-top: 30px;
+}
+.btn-submit {
+	margin-top: 30px;
+	margin-left: 38%;
+}
+.btn-style-3 { 
+background-color: #EEBC34;
+    border: 3px solid #231F20;
+    border-radius: 80px;
+    padding-left: 35px;
+    padding-right: 35px;
+    font-family: "Montserrat";
+    color: #231F20;
+    font-weight: bold;
+	padding-top: 6px;
+	padding-bottom: 6px
+}
+
+.btn-style-3:hover {
+	background-color: #F2F2F2;
+	border: 3px solid #231F20;
+    border-radius: 80px;
+    padding-left: 35px;
+    padding-right: 35px;
+    font-family: "Montserrat";
+    color: #231F20;
+    font-weight: bold;
+}
+.btn-style-4 {
+	background-color: #F2F2F2;
+    border: 3px solid #231F20;
+    border-radius: 80px;
+    padding-left: 35px;
+    padding-right: 35px;
+    font-family: "Montserrat";
+    color: #231F20;
+    font-weight: bold;
+	padding-top: 6px;
+	padding-bottom: 6px
+}
+.btn-style-4:hover {
+	background-color: #EEBC34;
+	border: 3px solid #231F20;
+    border-radius: 80px;
+    padding-left: 35px;
+    padding-right: 35px;
+    font-family: "Montserrat";
+    color: #231F20;
+    font-weight: bold;
+}
+
+/*------------------CONTACT US----------------------*/
+.contact-contactus {
+	background-image: url("../images/homepage-carousel4.png");
+	background-size: cover;
+	padding-top: 10%;
+	padding-bottom: 10%;
+}
+.contact-container h3 {
+	font-family: "Shanty House";
+	font-size: 64px;
+	padding-top: 50px;
+	text-align: center;
+}
+.contact-container {
+	border: 3px solid #231F20;
+	box-shadow: 15px 13px #231F20;
+    border-radius: 39px;
+	background-color: #F2F2F2;
+	height: auto;
+	width: 50%;
+	margin-left: 25%;
+	padding: 2% 2% 5% 2%;
+}
+textarea {
+  	width: 100%;
+  	padding: 12px;
+	border: 3px solid #EEBC34;
+	border-radius: 12px;
+ 	 margin-top: 6px;
+  	margin-bottom: 16px;
+  	resize: vertical;
+}
+/*------------------ABOUT US PAGE----------------------*/
+.fc-col9 {
+	width: 30%;
+}
+.fc-col9 img {
+	width: 100%;
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+}
+.aboutus-gallery {
+	background-color:  #F2F2F2;
+	height: auto;
+	padding-bottom: 10%;
+}
+.aboutus-carousel h3 {
+	font-family: "Shanty House";
+	font-size: 64px;
+	padding-top: 50px;
+	text-align: center;
+}
+.aboutus-carousel img {
+	width: 60%;
+}
+
+/* -------------------    PET HOTEL - BOOKING   -------------------------   */
+
+.pethotel-book {
+	height: auto;
+	background-color: #F2F2F2;
+	border-bottom: 3px solid #231F20;
+}
+.pethotel-book h3 {
+	font-family: "Shanty House";
+	font-size: 77px;
+	padding-top: 100px;
+	color: #231F20;
+	text-align: center;
+}
+.flex-container-10 {
+	display: flex;
+	flex-direction: row;
+	margin-top: 5%;
+	margin-left: 3%;
+	margin-right: 3%;
+	margin-bottom: 10%;
+	padding-top: 0.5%;
+	justify-content: space-evenly;
+}
+.flex-container-10 img {
+	width: 90%;
+	border: 3px solid #231F20;
+    border-radius: 20px;
+	margin-top: 30px;
+	margin-left: 20px;
+}
+.flex-container-10 h5 {
+	font-family: "Shanty House";
+	padding-top: 25px;
+	font-size: 38px;
+	color: #231F20;
+	padding-left: 20px;
+}
+.flex-container-10 p {
+	font-family: "Montserrat";
+	width: 420px;
+	padding-top: 5px;
+	font-size: 16px;
+	padding-left: 20px;
+}
+.fc-col10 {
+	width: 50%;
+}
+.flex-container-10 button {
+	margin-left: 20px;
+}
+.homepage-el7 {
+	background-color: #F493B5;
+	border: 3px solid #231F20;
+    border-radius: 9%;
+	width: 515px;
+    height: 578px;
+	position: relative;
+	margin: 0 auto;
+	box-shadow: 15px 13px #231F20;
+}
+.homepage-el8 {
+	background-color: #7DA3D4;
+	border: 3px solid #231F20;
+    border-radius: 9%;
+	width: 515px;
+    height: 578px;
+	position: relative;
+	margin: 0 auto;
+	box-shadow: 15px 13px #231F20;
+}
+
+/* -------------------    PET HOTEL - ADDITIONAL INFO   -------------------------   */
+.pethotel-addinfo {
+	height: auto;
+	background-color: #F2F2F2;
+}
+.pethotel-addinfo h3 {
+	font-family: "Shanty House";
+	font-size: 77px;
+	padding-top: 100px;
+	color: #231F20;
+	text-align: center;
+}
+.ph-ai-accordion {
+	padding-top: 70px;
+	padding-left: 60px;
+	padding-right: 60px;
+	padding-bottom: 180px;
+	
+}
+.ph-ai-accordion a {
+	
+}
+.ai-style-1 {
+	background-color:  #EEBC34;
+}
+.ai-style-1 a {
+	color: #231F20;
+}
+.ai-style-2 {
+	background-color:  #231F20;
+}
+.ai-style-2 a {
+	color: #EEBC34;
+}
+
+/* --------------    RESOURCES    ----------------*/
+.resources-videos {
+	background-color: #DCE5F5;
+	height: auto;
+	padding-bottom: 20px;
+}
+.resources-videos h3 {
+	font-family: "Shanty House";
+	font-size: 64px;
+	text-align: center;
+	padding-top: 60px;
+}
+.flex-container-11 {
+  	display: flex;
+	flex-direction: row;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	padding-left: 3%;
+	background-color: #DCE5F5;
+	align-items: center;
+  	justify-content: center;
+	grid-gap: 40px;
+}
+.flex-container-11 p {
+    font-family: "Montserrat";
+    color: #231F20;
+	width: 470px;
+	font-size: 18px;
+	text-align: center;
+	padding-left: 60px;
+	font-weight: 600;
+}
+
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (max-width: 800px) {
+	.flex-container-11{
+		flex-direction: column;
+	}
+	.flex-container-1 {
+	  flex-direction: column-reverse;
+	  align-items: center;
+  	justify-content: center;
+	  
+  }
+	.nav-txt {
+    font-family: "Montserrat";
+    font-weight: 500;
+		font-size: 16px;
+}
+	body { 
+      font-size: 2em; 
+   }
+	.homepage-img-1 {
+	width: 90%;
+	margin: 0 auto;
+	max-width: 1000px;
+	min-width: 300px;
+    height: auto;
+	padding-right: 0%;
+	padding-left: 0%;
+		display: block;
+}
+.fc-col9 {
+	width: 100%;
+	padding-top: 20px;
+}
+
+	.flex-container-1 h1 {
+	font-size: 60px;
+	text-shadow: 3px 3px #231F20;
+	padding-top: 80px;
+	text-align: center;	
+	padding-right: 5%;
+	padding-left: 5%;	
+}
+	
+.flex-container-1 p {
+	font-family: "Montserrat", sans-serif;
+	font-size: 15px;
+	text-align: center;
+	padding-right: 10%;
+	padding-left: 10%;
+	display: block;
+	margin: auto;
+	width: auto;
+	padding-top: 20px;
+	padding-bottom: 50px;
+}
+	.fc-col1 {
+	width: 100%;
+}
+	.btn-style-1 {
+	font-size: 15px;
+}
+	.btn-style-2 {
+	font-size: 15px;
+}
+	.btn-homepage {
+	padding: 0px;
+	margin-bottom: 30%;
+	text-align: center;
+}
+	.btn-homepage button {
+	margin-left: 0px;
+}
+	.marquee {
+	font-size: 40px;
+	}
+	 /* -----------services------------- */
+.homepage-services {
+	text-align: center;
+	height: auto;
+	border-bottom: 3px solid black;
+}
+.homepage-services h3 {
+	padding-top: 100px;
+	font-size: 60px;
+}
+.homepage-services h5 {
+	font-size: 18px;
+	padding-top: 20px;
+}
+.flex-container-2 {
+	display: flex;
+	flex-direction: column;
+	 /* align-items: center;
+	justify-content: space-evenly;*/
+	margin-top: 5%;
+	margin-left: 0%;
+	margin-right: 0%;
+	margin-bottom: 10%;
+	justify-content: center;
+	grid-gap: 40px;
+}
+	.flex-container-2 h5 {
+		margin-left: 10%;
+	margin-right: 10%;
+	}
+.fc-col2 {
+	width: 100%;
+}
+
+/* -----------about us------------- */
+	.homepage-aboutus {
+	background-color: #F2F2F2;
+	height: auto;
+}
+.flex-container-3 {
+  	display: flex;
+	flex-direction: column;
+	
+	background-color: #F2F2F2;
+	/*align-items: center;
+  	justify-content: center;*/
+	justify-content: center;
+	align-items: center;
+}
+
+.flex-container-3 img {
+	width: 72%;
+	min-width: 400px;
+	margin: 0 auto;
+	display: block;
+}
+.flex-container-3 h3 {
+	font-size: 50px;
+	text-align: center;
+	padding-top: 40px;
+	padding-right: 5%;
+	padding-left: 5%;
+}
+.flex-container-3 p {
+    /*font-size: 15px;
+	text-align: center;
+	padding-right: 5%;
+	padding-left: 5%;
+	display: block;
+	margin: auto;*/
+	 font-size: 15px;
+	text-align: center;
+	padding-right: 10%;
+	padding-left: 10%;
+	display: block;
+	margin: auto;
+	width: auto;
+}
+.fc-col3 {
+	width: 100%;
+}
+	
+	.btn-center {
+	padding: 0px;
+	margin-bottom: 5%;
+	text-align: center;
+}
+	/* -----------pet hotel------------- */
+	.homepage-pethotel {
+	background-color: #DCE5F5;
+	height: 890px;
+	padding-bottom: 20px;
+}
+.flex-container-4 {
+  	display: flex;
+	flex-direction: column-reverse;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	background-color: #DCE5F5;
+	justify-content: center;
+	align-items: center;
+	padding-left: 0%;
+	/*align-items: center;
+  	justify-content: center;*/
+}
+
+.flex-container-4 img {
+	width: 72%;
+	min-width: 400px;
+	margin: 0 auto;
+	display: block;
+	
+	
+}
+.flex-container-4 h3 {
+	font-size: 50px;
+	text-align: center;
+	padding-top: 40px;
+	padding-right: 5%;
+	padding-left: 5%;
+}
+.flex-container-4 p {
+    font-size: 15px;
+	text-align: center;
+	padding-right: 10%;
+	padding-left: 10%;
+	display: block;
+	margin: auto;
+	width: auto;
+}
+.fc-col4 {
+	width: 100%;
+}
+	/* -----------what our customers say------------- */
+	.homepage-customers {
+	background-image: url("../images/homepage-carousel3.jpg");
+	background-size: cover;
+	text-align: center;
+	height: 1900px;
+	border-bottom: 3px solid black;
+}
+.homepage-customers h3 {
+	font-size: 50px;
+	text-align: center;
+	padding-top: 90px;
+	padding-right: 5%;
+	padding-left: 5%;
+	
+	/*padding-top: 100px;
+	margin-top: 150px;
+	  -webkit-text-stroke: 2px #231F20;
+	color: #EEBC34;
+	text-shadow: 3px 3px #231F20;*/
+}
+.flex-container-5 {
+	display: flex;
+	flex-direction: column;
+	margin-top: 5%;
+	margin-left: 3%;
+	margin-right: 3%;
+	margin-bottom: 10%;
+	padding-top: 0.5%;
+	justify-content: space-evenly;
+	opacity: 0.9;
+}
+.flex-container-5 img {
+	border: 3px solid black;
+    border-radius: 50%;
+	width: 35%;
+	margin-top: 35px;
+}
+.flex-container-5 h5 {
+	font-size: 25px;
+}
+.flex-container-5 h6 {
+	font-size: 14px;
+}
+.flex-container-5 p {
+	width: 360px;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 25px;
+	font-size: 15px;
+}
+
+.fc-col5 {
+	width: 100%;
+}
+.homepage-el4 {
+	background-color: #F493B5;
+	border: 3px solid black;
+    border-radius: 9%;
+	width: 415px;
+    height: 478px;
+	position: relative;
+	margin: 0 auto;
+	box-shadow: 15px 13px #231F20;
+	margin-bottom: 60px;
+}
+.homepage-el5 {
+	background-color: #7DA3D4;
+	border: 3px solid black;
+    border-radius: 9%;
+	width: 415px;
+    height: 478px;
+	position: relative;
+	margin: 0 auto;
+	box-shadow: 15px 13px #231F20;
+	margin-bottom: 60px;
+}
+.homepage-el6 {
+	background-color: #EEBC34;
+	border: 3px solid #231F20;
+    border-radius: 9%;
+	width: 415px;
+    height: 478px;
+	position: relative;
+	margin: 0 auto;
+	box-shadow: 15px 13px #231F20;
+	margin-bottom: 60px;
+}
+	
+	
+	.footer {
+	
+	height: 1000px;
+	padding-bottom: 0px;
+	margin: 0px;
+	background-color: #231F20;
+}
+.flex-container-6 {
+  	display: flex;
+	flex-direction: column;
+	padding-bottom: 0%;
+	padding-left: 0%;
+	background-color: #231F20;
+	padding-top: 5%;
+	margin-left: 0px;
+	/*align-items: center;
+  	justify-content: center;*/
+}
+.fc-col6 {
+	width: 100%;
+	/*background-color: aquamarine;*/
+	margin: 1%;
+	color: #F2F2F2;
+}
+.fc-col6 img {
+	margin-top: 0px;
+	width: 60%;
+	position: absolute;
+  	top: 0px;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+	padding-left: 0px;
+	display: none;
+	padding-bottom: 0px;
+}
+.fc-col6 h5, .fc-col6 p {
+	padding-left: 0px;
+}
+.fc-col6 h5 {
+	font-family: "Montserrat", sans-serif;
+	text-align: center;
+	font-weight: bold;
+	padding-top: 10px;
+	font-size: 25px;
+	color: #EEBC34;
+}
+.fc-col6 p {
+	font-family: "Montserrat", sans-serif;
+	font-size: 16px;
+	text-align: center;
+}
+.fc-col6 button {
+	margin-top: 25px;
+}
+#social-media {
+	width: 30%;
+	padding-left: 0px;
+	left: 0%;
+	display: block;
+	position: static;
+	margin-left: 50%;
+	min-width: 200px;
+}
+	.fc-col7 h5 {
+	color: #F2F2F2;
+	font-family: "Montserrat", sans-serif;
+	font-size: 20px;
+	font-weight: bold;
+	
+	text-align: center;
+	background-color: #231F20;
+}
+	
+	/*         SERVICES MOBILE         */
+	.services-style h5 {
+		padding-top: 20px;
+		text-align: center;
+		
+	}
+	.services-style ul {
+		text-decoration: none;
+		list-style: none;
+		text-align: center;
+		padding-left: 0px;
+	}
+	.homepage-img-2 {
+		padding-left: 0px;
+	}
+	.flex-container-8 {
+		flex-direction: column-reverse;
+		padding: 5%;
+	}
+	.fc-col8 {
+		width: 100%;
+	}
+	.services-container {
+		height: auto;
+	}
+	.flex-container-8 img {
+		margin: 0 auto;
+		width: 72%;
+		display: block;
+		min-width: 400px;
+	}
+	.flex-container-8 h3 {
+        font-size: 50px;
+        text-align: center;
+        padding-top: 40px;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+	.flex-container-8 p {
+        font-size: 15px;
+        text-align: center;
+        padding-right: 10%;
+        padding-left: 10%;
+        display: block;
+        margin: auto;
+        width: auto;
+    }
+	.services-reservation {
+		margin-top: 0px;
+	}
+	.services-res-box {
+		margin-top: 15%;
+	}
+	.services-reservation h3 {
+    font-size: 50px;
+    padding-top: 130px;
+    -webkit-text-stroke: 2px #231F20;
+    text-shadow: 3px 3px #231F20;
+		padding-left: 30px;
+		padding-right: 30px;
+}
+	.services-reservation h5 {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 15px;
+		padding-left: 80px;
+		padding-right: 80px;
+}
+	.homepage-img-3 {
+    width: 100%;
+    padding-left: 20px;
+		padding-right: 20px;
+    max-width: 1000px;
+    min-width: 500px;
+    height: auto;
+}
+	/*         PET HOTEL MOBILE         */
+	.pethotel-book h3 {
+    font-size: 60px;
+}
+	.flex-container-10 {
+		flex-direction: column;
+		margin-left: 20px;
+		margin-right: 20px;
+		grid-gap: 40px;
+	}
+	.homepage-el7 {
+    width: 485px;
+    height: 578px;
+}
+	.homepage-el8 {
+    width: 485px;
+}
+	.btn-style-4 {
+		font-size: 18px;
+}
+	.btn-style-3 {
+		font-size: 18px;
+}
+	.card-body {
+		font-size: 18px;
+	}
+	.pethotel-addinfo h3 {
+    font-size: 60px;
+}
+	.contact-container {
+    border: 3px solid #231F20;
+    box-shadow: 12px 10px #231F20;
+    border-radius: 39px;
+    background-color: #F2F2F2;
+    height: auto;
+    width: 90%;
+    margin-left: 5%;
+    padding: 2% 2% 5% 2%;
+}
+	.contact-container h3 {
+   font-size: 60px;
+}
+	textarea {
+		font-size: 18px;
+	}
+	.booking-box {
+    border: 3px solid #231F20;
+    box-shadow: 15px 13px #231F20;
+    border-radius: 39px;
+    background-color: #F2F2F2;
+    height: auto;
+    width: 90%;
+    margin-top: 10%;
+    margin-left: 5%;
+    margin-bottom: 10%;
+    padding: 2% 2% 5% 2%;
+}
+	.btn-booking {
+    display: flex;
+    padding-left: 17%;
+    gap: 32px;
+    margin-top: 30px;
+}
+	.fc-col2 p {
+		margin-left: 40px;
+		margin-right: 40px;
+	}
+	.contactus-txt {
+		font-size: 60px;
+	}
+}
+@media (min-width: 1920px) {
+.flex-container-1 h1 {
+    font-size: 120px;
+}
+	.flex-container-1 p {
+		font-size: 1.8rem;
+	}
+	.btn-style-1{
+		font-size: 1.4rem;
+	}
+	.btn-style-2{
+		font-size: 1.4rem;
+	}
+	.homepage-aboutus {
+    height: auto;
+}
+	.homepage-pethotel {
+    height: auto;
+    padding-bottom: 0px;
+}
+	.flex-container-4 {
+		padding-bottom: 0px;
+	}
+	.footer {
+    height: auto;
+}
+	
+}
+
